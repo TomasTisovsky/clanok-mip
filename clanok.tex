@@ -13,6 +13,8 @@
 \usepackage{cite}
 %\usepackage{times}
 
+\usepackage{graphicx}
+
 \pagestyle{headings}
 
 \title{Životný cyklus dátových skladov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2021/22, vedenie: Ing. Vladimír Mlynarovič, PhD.}} % meno a priezvisko vyučujúceho na cvičeniach
@@ -23,7 +25,7 @@
 	{\small \texttt{xtisovskyt@stuba.sk}}
 	}
 
-\date{\small 30. september 2015} % upravte
+\date{\small 4. november 2021} % upravte
 
 
 
@@ -42,7 +44,14 @@ Tieto ciele článok spĺňa opísaním kompletného životného cyklu dátovýc
 
 Tento článok sa venuje životnému cyklu dátových skladov. Technológia dátových skladov predstavuje v súčasnosti jeden z najvýznamnejších trendov v rozvoji podnikových informačných systémov. Dátový sklad (Data Warehouse) možno definovať mnohými spôsobmi. Za základ však budeme považovať definície jedného zo zakladateľov DWH, Williama Inmon.„Dátový sklad je integrovaný, subjektovo orientovaný, stály a časovo rozlíšený súhrn dát, usporiadaný pre podporu potrieb manažmentu“\cite{Novotny2005} 
 
-Životný cyklus prebieha v niekolkých etapách. Poznanie etáp projektu je dôležité pre všetkých účastníkov projektu, teda manažérov, analytikov, návrhárov, či vývojárov na vykonanie správnych úloh v správny čas. Pri vytvorení takéhoto softvéru sa kladie hlavný dôraz na požiadavky užívateľov, iteratívnosť a dimenzionalitu v poňatí štruktúrovaných dát. Za štandard v tejto oblasti sa považuje životný cyklus od  Ralpha Kimballa. Tento model využíva agilný prístup pre jeho vyššiu efektivitu a úspešnosť. Tento model je zobrazený v Kimball Lifecycle diagram (obr. nižšie). Tento diagram poskytuje celkový plán znázornujúci postupnosť úloh na vysokej úrovni potrebnných  pre úspešné DW/BI projekty. 
+Životný cyklus prebieha v niekolkých etapách. Poznanie etáp projektu je dôležité pre všetkých účastníkov projektu, teda manažérov, analytikov, návrhárov, či vývojárov na vykonanie správnych úloh v správny čas. Pri vytvorení takéhoto softvéru sa kladie hlavný dôraz na požiadavky užívateľov, iteratívnosť a dimenzionalitu v poňatí štruktúrovaných dát. Za štandard v tejto oblasti sa považuje životný cyklus od  Ralpha Kimballa. Tento model využíva agilný prístup pre jeho vyššiu efektivitu a úspešnosť. Tento model je zobrazený v Kimball Lifecycle diagram (obr. nižšie). 
+
+\begin{figure}
+\includegraphics[width=\textwidth]{Kimball Life cycle diagram.jpg}
+\caption{Diagram životného cyklu podľa Kimballa }
+\end{figure}
+
+Tento diagram poskytuje celkový plán znázornujúci postupnosť úloh na vysokej úrovni potrebnných  pre úspešné DW/BI projekty. 
 
 Model podľa Kimballa začína plánovaním. V tejto fáze je potrebné určiť rozsah projektu a potrebné zdroje. V tejto fáze sa začínajú aj riadiace povinnosti, ktoré pretrvávajú počas celého zvyšku projektu.  
 Na fázu plánovania nadväzuje fáza definovania uživateľských požiadaviek. Táto fáza je pre projekt klúčová pretože ovplyvnuje všetky nasledovné fázy projektu. Medzi fázou plánovania a fázou zberu požiadaviek je potreba úzkej vzájomnej spolupráce.
