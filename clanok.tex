@@ -40,12 +40,19 @@ Tieto ciele článok spĺňa opísaním kompletného životného cyklu dátovýc
 
 \section{Úvod}
 
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+Tento článok sa venuje životnému cyklu dátových skladov. Technológia dátových skladov predstavuje v súčasnosti jeden z najvýznamnejších trendov v rozvoji podnikových informačných systémov. Dátový sklad (Data Warehouse) možno definovať mnohými spôsobmi. Za základ však budeme považovať definície jedného zo zakladateľov DWH, Williama Inmon.„Dátový sklad je integrovaný, subjektovo orientovaný, stály a časovo rozlíšený súhrn dát, usporiadaný pre podporu potrieb manažmentu“\cite{Novotny2005} 
 
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
+Životný cyklus prebieha v niekolkých etapách. Poznanie etáp projektu je dôležité pre všetkých účastníkov projektu, teda manažérov, analytikov, návrhárov, či vývojárov na vykonanie správnych úloh v správny čas. Pri vytvorení takéhoto softvéru sa kladie hlavný dôraz na požiadavky užívateľov, iteratívnosť a dimenzionalitu v poňatí štruktúrovaných dát. Za štandard v tejto oblasti sa považuje životný cyklus od  Ralpha Kimballa. Tento model využíva agilný prístup pre jeho vyššiu efektivitu a úspešnosť. Tento model je zobrazený v Kimball Lifecycle diagram (obr. nižšie). Tento diagram poskytuje celkový plán znázornujúci postupnosť úloh na vysokej úrovni potrebnných  pre úspešné DW/BI projekty. 
+
+Model podľa Kimballa začína plánovaním. V tejto fáze je potrebné určiť rozsah projektu a potrebné zdroje. V tejto fáze sa začínajú aj riadiace povinnosti, ktoré pretrvávajú počas celého zvyšku projektu.  
+Na fázu plánovania nadväzuje fáza definovania uživateľských požiadaviek. Táto fáza je pre projekt klúčová pretože ovplyvnuje všetky nasledovné fázy projektu. Medzi fázou plánovania a fázou zberu požiadaviek je potreba úzkej vzájomnej spolupráce.
+Horná časť diagramu sa venuje technologickej stránke projektu kde prebieha technologická architektúra. Po dokončení architektúri sa vyberú vhodné nástroje na tvorbu sofvéru. 
+Stredná časť diagramu sa zaoberá dátovej stránke projektu. V tejto fáze sa vývojári venujú dátam, operáciam s nimi.  Vzniká tu  multidimenzionálny model, ktorý je podstatou DW/BI projekov. Taktiež sa tu tvorí fyzický model a prebehne ETL proces(extract, transform, load). 
+Spodná časť diagramu sa sustredí na výstupy pre uživateľov vo forme multidimenzionalnej aplikácie. 
+V sekcii s názvom rast sú vyjadrené praktiky inkrementálnosti. Táto sekcia  hovorí o tom , že pri každom prírastku dát by sa vývojári mali vracať k plánu a držať sa požiadaviek uživateľov. Nasledujúca časť článku je venovaná jednotlivím etapám životného cyklu. \cite{Kimball2013}
+
+
+
 
 
 
