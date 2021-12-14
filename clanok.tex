@@ -25,7 +25,7 @@
 	{\small \texttt{xtisovskyt@stuba.sk}}
 	}
 
-\date{\small 4. november 2021} % upravte
+\date{\small 14. december 2021} % upravte
 
 
 
@@ -34,7 +34,7 @@
 \maketitle
 
 \begin{abstract}
-Témou tohto článku je proces tvorby dátových skladov vrámci oblasti Business Intelligence. Vzhľadom na pomerne vysokú komplexnosť DW/BI systémov je využitie agilných praktík v tejto oblasti nutnosťou pre efektívnu tvorbu daných projektov. Pri znalosti metód a postupov pri vývoji dátových skladov je práca na projekte organizovana a môže dôjsť k výraznému ušetreniu času, či finančných prostriedkov. Článok má za cieľ predstaviť najlepšie techniky, praktiky a prístupy pre tento obor. Článok sa venuje rôznym etapám životného cyklu dátoveho skladu ako plánovanie a riadenie projektu, definícia a zber požiadaviek, technologická fáza, dátová fáza, aplikačná fáza a údržba.
+Témou tohto článku je proces tvorby dátových skladov vrámci oblasti Business Intelligence. Vzhľadom na pomerne vysokú komplexnosť DW/BI systémov je využitie agilných praktík v tejto oblasti nutnosťou pre efektívnu tvorbu daných projektov. Pri znalosti metód a postupov pri vývoji dátových skladov je práca na projekte organizovaná a môže dôjsť k výraznému ušetreniu času, či finančných prostriedkov. Článok má za cieľ predstaviť najlepšie techniky, praktiky a prístupy pre tento obor. Článok sa venuje rôznym etapám životného cyklu dátoveho skladu ako plánovanie a riadenie projektu, definícia a zber požiadaviek, technologická fáza, dátová fáza, aplikačná fáza a údržba.
 Tieto ciele článok spĺňa opísaním kompletného životného cyklu dátových skladov. 
 \end{abstract}
 
@@ -42,9 +42,9 @@ Tieto ciele článok spĺňa opísaním kompletného životného cyklu dátovýc
 
 \section{Úvod}
 
-Tento článok sa venuje životnému cyklu dátových skladov. Technológia dátových skladov predstavuje v súčasnosti jeden z najvýznamnejších trendov v rozvoji podnikových informačných systémov. Dátový sklad (Data Warehouse) možno definovať mnohými spôsobmi. Za základ však budeme považovať definície jedného zo zakladateľov DWH, Williama Inmon.„Dátový sklad je integrovaný, subjektovo orientovaný, stály a časovo rozlíšený súhrn dát, usporiadaný pre podporu potrieb manažmentu“\cite{Novotny2005} 
+Tento článok sa venuje životnému cyklu dátových skladov. Technológia dátových skladov predstavuje v súčasnosti jeden z najvýznamnejších trendov v rozvoji podnikových informačných systémov. Dátový sklad (Data Warehouse) možno definovať mnohými spôsobmi. Za základ však budeme považovať definície jedného zo zakladateľov DWH, Williama Inmona.„Dátový sklad je integrovaný, subjektovo orientovaný, stály a časovo rozlíšený súhrn dát, usporiadaný pre podporu potrieb manažmentu“\cite{Novotny2005} 
 
-Životný cyklus prebieha v niekolkých etapách. Poznanie etáp projektu je dôležité pre všetkých účastníkov projektu, teda manažérov, analytikov, návrhárov, či vývojárov na vykonanie správnych úloh v správny čas. Pri vytvorení takéhoto softvéru sa kladie hlavný dôraz na požiadavky užívateľov, iteratívnosť a dimenzionalitu v poňatí štruktúrovaných dát. Za štandard v tejto oblasti sa považuje životný cyklus od  Ralpha Kimballa. Tento model využíva agilný prístup pre jeho vyššiu efektivitu a úspešnosť. Tento model je zobrazený v Kimball Lifecycle diagram (obr. nižšie). 
+Životný cyklus prebieha v niekolkých etapách. Poznanie etáp projektu je dôležité pre všetkých účastníkov projektu, teda manažérov, analytikov, návrhárov, či vývojárov na vykonanie správnych úloh v správnom čase. Pri vytvorení takéhoto softvéru sa kladie hlavný dôraz na požiadavky užívateľov, iteratívnosť a dimenzionalitu v poňatí štruktúrovaných dát. Za štandard v tejto oblasti sa považuje životný cyklus od  Ralpha Kimballa. Tento model využíva agilný prístup pre jeho vyššiu efektivitu a úspešnosť. Tento model je zobrazený v Kimball Lifecycle diagram (obr. nižšie). 
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Kimball Life cycle diagram upravený.jpg}
@@ -56,9 +56,9 @@ Tento diagram poskytuje celkový plán znázornujúci postupnosť úloh na vysok
 Model podľa Kimballa začína plánovaním. V tejto fáze je potrebné určiť rozsah projektu a potrebné zdroje. V tejto fáze sa začínajú aj riadiace povinnosti, ktoré pretrvávajú počas celého zvyšku projektu.  
 Na fázu plánovania nadväzuje fáza definovania uživateľských požiadaviek. Táto fáza je pre projekt klúčová pretože ovplyvnuje všetky nasledovné fázy projektu. Medzi fázou plánovania a fázou zberu požiadaviek je potreba úzkej vzájomnej spolupráce.
 Horná časť diagramu sa venuje technologickej stránke projektu kde prebieha technologická architektúra. Po dokončení architektúri sa vyberú vhodné nástroje na tvorbu sofvéru. 
-Stredná časť diagramu sa zaoberá dátovej stránke projektu. V tejto fáze sa vývojári venujú dátam, operáciam s nimi.  Vzniká tu  multidimenzionálny model, ktorý je podstatou DW/BI projekov. Taktiež sa tu tvorí fyzický model a prebehne ETL proces(extract, transform, load). 
+Stredná časť diagramu sa zaoberá dátovej stránke projektu. V tejto fáze sa vývojári venujú dátam a operáciam s nimi. Vzniká tu multidimenzionálny model, ktorý je podstatou DW/BI projekov. Taktiež sa tu tvorí fyzický model a prebehne ETL proces(extract, transform, load). 
 Spodná časť diagramu sa sustredí na výstupy pre uživateľov vo forme multidimenzionalnej aplikácie. 
-V sekcii s názvom rast sú vyjadrené praktiky inkrementálnosti. Táto sekcia  hovorí o tom , že pri každom prírastku dát by sa vývojári mali vracať k plánu a držať sa požiadaviek uživateľov. Nasledujúca časť článku je venovaná jednotlivím etapám životného cyklu. \cite{Kimball2013}
+V sekcií s názvom rast sú vyjadrené praktiky inkrementálnosti. Táto sekcia  hovorí o tom , že pri každom prírastku dát by sa vývojári mali vracať k plánu a držať sa požiadaviek uživateľov. Nasledujúca časť článku je venovaná jednotlivím etapám životného cyklu. \cite{Kimball2013}
 
 
 
@@ -95,7 +95,7 @@ Taktiež je dôležité aj určenie benefitov, ktoré daný systém prinesie, te
 \section{Definícia a zber požiadaviek} \label{ina}
 
  V tejto etape životného cyklu je dôležitá komunikácia so zákazníkmi, a zisťovanie ich požiadaviek pre daný softvér. Technické otázky ako architektúra, granularita a multidimenzionalita na tejto úrovni nie sú komunikované. Hlavným nástrojom tímu vývojárov na získanie požiadaviek je interview, kde je možné získať užitočné a detailné informacie. Pre vytvorenie úspešného DW/BI systému je potrebné komunikovať so zástupcami naprieč celou organizáciou a osvojiť si ich používané systémy a dáta. 
-Zároveň je výhodné ak na sa stretnutiach so zákaznkmi zúčastnujú aj dátový analyticy, ktorý do hĺbky rozumrjú uživateľským dátam a môžu prispieť k správnemu smerovaniu zberu požiadaviek. 
+Zároveň je výhodné ak sa na stretnutiach so zákaznkmi zúčastnujú aj dátoví analytici, ktorý do hĺbky rozumrjú uživateľským dátam a môžu prispieť k správnemu smerovaniu zberu požiadaviek. 
 Pri zbere požiadaviek je dôležitá dokumentácia, zhrnutie a zaznamenanie kľúčových informácii a analýza požiadaviek. Dôležitou súčasťou je tiež zistenie kritérií úspechu od užívateľov, ktoré očakávajú od DW/BI systému. Pri veľkom množstve požiadaviek je dôležitá prioritizácia, ktorá by mala brať do úvahy potenciálnu hodnotu požiadavky pre organizáciu.\cite{Kimball2013}
 
 
